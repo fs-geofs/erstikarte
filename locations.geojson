@@ -4,8 +4,10 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-symbol":"bus",
-        "title": "GEO 1"
+        "marker-color": "#336699",
+        "marker-symbol":"building",
+        "title": "GEO 1",
+        "description": "The place to be. Das GEO1 Gebäude, in dem ihr später die meiste Zeit abhängen werdet."
       },
       "geometry": {
         "type": "Point",
