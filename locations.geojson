@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol":"bus",
+        "title": "GEO 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.595779895782471,
+          51.96933645806144
+        ]
+      }
+    }
+  ]
+}
