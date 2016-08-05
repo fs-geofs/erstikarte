@@ -1,0 +1,397 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "FeatureCollection",
+      "properties": {
+        "title": "O-Woche",
+        "description": "Lorem Ipsum Dolor Amet asdfasdfasdfasdfasdfadsf"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#339966",
+            "marker-symbol":"building",
+            "title": "GEO 1",
+            "description": "The place to be. Das GEO1 Gebäude, in dem ihr später die meiste Zeit abhängen werdet.",
+            "urls": {
+              "https://geofs.uni-muenster.de/wp/": "https://geofs.uni-muenster.de/wp/wp-content/uploads/2015/03/Bildschirmfoto-2014-07-29-um-11.36.41-150x150.png",
+              "http://www.uni-muenster.de/Geoinformatics": "http://www.uni-muenster.de/imperia/md/images/geoinformatics/_v/logo-ifgi-text-de.png"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.595779895782471,
+              51.96933645806144
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureCollection",
+      "properties": {
+        "title": "Uni"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-size": "medium",
+            "marker-color": "#5ddc00",
+            "marker-symbol": "building",
+            "title": "GEO 1",
+            "description": "The place to be. Das GEO1 Gebäude, in dem ihr später die meiste Zeit abhängen werdet."
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.595742344856262,
+              51.96942073363007
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#f0cb0a",
+            "marker-size": "medium",
+            "marker-symbol": "restaurant",
+            "title": "Mensa am Ring",
+            "description": "Die größte Mensa der Uni, hier gibts Mo-Fr mehrere Menüs auf zwei Etagen.<br>Einen Geldautomaten &amp; Copyshop findest du hier übrigens auch!"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.600210905075072,
+              51.9654695262173
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#f0cb0a",
+            "marker-size": "medium",
+            "marker-symbol": "restaurant",
+            "title": "Mensa am Aasee",
+            "description": "Mensa in schöner Lage, hat teilweise auch Abends auf."
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.61802077293396,
+              51.955817266463
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#f0cb0a",
+            "marker-size": "medium",
+            "marker-symbol": "restaurant",
+            "title": "Bistro Denkpause",
+            "description": "Kleine Mensa in der FH, hat nur 2 der Tagesgerichte aus der Mensa am Ring"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.5947391986846915,
+              51.96858292828658
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#4e8edc",
+            "marker-size": "medium",
+            "marker-symbol": "college",
+            "title": "Mathe & Informatik Hörsaalgebäude"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.6027750968933105,
+              51.96580004625245
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#4e8edc",
+            "marker-size": "medium",
+            "marker-symbol": "college",
+            "title": "Mathe Seminarraumgebäude"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.60278582572937,
+              51.96649413039257
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#7e7e7e",
+            "marker-size": "medium",
+            "marker-symbol": "police",
+            "title": "Prüfungsamt FB14",
+            "description": "Ein Ort den ihr so selten wie möglich aufsuchen wollt. Das Prüfungsamt ist für eure Anmeldung und Noteneintragungen von Klausuren zuständig."
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.603408098220824,
+              51.96643794302872
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#ffffff",
+            "marker-size": "medium",
+            "marker-symbol": "place-of-worship",
+            "title": "Studierendensekretariat",
+            "description": "Das Studierendensekretariat übernimmt für die studierenden Verwaltungsaufgaben."
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.613525390624999,
+              51.9639424920119
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#f02523",
+            "marker-size": "medium",
+            "marker-symbol": "parking",
+            "title": "ULB",
+            "description": "Die Haupt-Bibliothek der Uni. Geoinformatiker sind dort eher selten anzutreffen.."
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.620901465415955,
+              51.96262695329827
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "FeatureCollection",
+      "properties": {
+        "title": "Münster"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#7e7e7e",
+            "marker-size": "medium",
+            "marker-symbol": "rail",
+            "title": "Hauptbahnhof"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.635755538940429,
+              51.95653795216583
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#e52218",
+            "marker-size": "medium",
+            "marker-symbol": "bar",
+            "title": "Hafenviertel",
+            "description": "Hier sind diverse Kneipen und Clubs für das abendliche Vergnügen zu finden"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.6418066024780265,
+              51.95235913630398
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#e52218",
+            "marker-size": "medium",
+            "marker-symbol": "bar",
+            "title": "Haverkamp",
+            "description": "Neben Clubs wie dem Tryptichon ist hier das Makerspace warpzone zu finden"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.638545036315918,
+              51.944198743459374
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#e52218",
+            "marker-size": "medium",
+            "marker-symbol": "bar",
+            "title": "Kreuzstraße",
+            "description": "Münsters kleine Kneipenstraße, mit einigen weniger hippen, aber umso gemütlicheren Läden"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.621572017669678,
+              51.96599174675602
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "stroke": "#32c311",
+            "stroke-width": 3,
+            "stroke-opacity": 1,
+            "title": "Promenade",
+            "description": "Die berühmtberüchtigte münsteraner Fahrradautobahn"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                7.616701126098633,
+                51.96661311516591
+              ],
+              [
+                7.617366313934326,
+                51.96698328799615
+              ],
+              [
+                7.6204776763916025,
+                51.96712871220007
+              ],
+              [
+                7.6233530044555655,
+                51.966877524642335
+              ],
+              [
+                7.630305290222168,
+                51.96793514694895
+              ],
+              [
+                7.631807327270508,
+                51.967776505194074
+              ],
+              [
+                7.633609771728516,
+                51.96558190330273
+              ],
+              [
+                7.634596824645996,
+                51.96264678582683
+              ],
+              [
+                7.634425163269043,
+                51.96095437848248
+              ],
+              [
+                7.629575729370117,
+                51.95714622833104
+              ],
+              [
+                7.62751579284668,
+                51.95653795216583
+              ],
+              [
+                7.6254987716674805,
+                51.95664373991784
+              ],
+              [
+                7.620520591735841,
+                51.957490032947824
+              ],
+              [
+                7.618803977966309,
+                51.957807388715544
+              ],
+              [
+                7.616314888000487,
+                51.95801895797933
+              ],
+              [
+                7.614555358886718,
+                51.96058415585834
+              ],
+              [
+                7.614555358886718,
+                51.962065028009334
+              ],
+              [
+                7.61601448059082,
+                51.96222368998107
+              ],
+              [
+                7.616271972656249,
+                51.96611073286309
+              ],
+              [
+                7.6166582107543945,
+                51.96650735093854
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#15b715",
+            "marker-size": "medium",
+            "marker-symbol": "pitch",
+            "title": "Antenne am Aasee",
+            "description": "Die Wiesen am Aasee laden zum Sonnentanken ein. An dieser Antenne findet auch das alljährliche geofs.grillen() statt!"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.60503888130188,
+              51.95224672606802
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#1a17f0",
+            "marker-size": "medium",
+            "marker-symbol": "fuel",
+            "titel": "Blaue Lagune",
+            "description": "Du brauchst morgens um 4 noch Bier/Kekse/Blättchen/..? These guys take care of you!"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.6138633489608765,
+              51.96743277946533
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+.hidden {
+    display: none!important;
+}
+
+.leaflet-control-tour {
+  width: 300px;
+  color: #333;
+  background: #fff;
+}
+
+.leaflet-control-tour-buttons .prev {
+  font-weight: bold;
+  float: left;
+}
+.leaflet-control-tour-buttons .next {
+  font-weight: bold;
+  float: right;
+}
+.leaflet-control-tour-buttons .title {
+  font-weight: bold;
+  width: calc(100% - 52px)!important;
+  float: left;
+  display: block;
+}
+
+.leaflet-control-tour-description {
+  color: #444;
+  padding: 30px 10px 5px 20px;
+}
+.leaflet-control-tour-expanded .leaflet-control-tour-description {
+  display: none;
+}
+
+.leaflet-control-tour-list {
+  display: none;
+}
+.leaflet-control-tour-expanded .leaflet-control-tour-list {
+  display: block;
+  padding: 30px 10px 0 20px;
+  margin: 0;
+}
+.leaflet-control-tour-list li a,
+.leaflet-control-tour-list li a:hover {
+  text-align: left;
+  width: auto!important;
+  white-space: nowrap;
+}
+
+/* show scrollbar only when necessary */
+.leaflet-control-tour-scrollbar {
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+
+/* fix round corners for a horizontal control bar */
+.leaflet-control-tour-buttons a:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+}
+.leaflet-control-tour-buttons a:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.popup-link {
+  margin-left: 10px;
+}
+
+.popup-link img {
+  max-height: 40px;
+}
