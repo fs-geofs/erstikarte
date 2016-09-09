@@ -5,20 +5,17 @@
       "type": "FeatureCollection",
       "properties": {
         "title": "O-Woche",
-        "description": "Lorem Ipsum Dolor Amet asdfasdfasdfasdfasdfadsf"
+        "description": "Einige der Orte, an denen Events während der Erstiwoche stattfinden"
       },
       "features": [
         {
           "type": "Feature",
           "properties": {
-            "marker-color": "#339966",
-            "marker-symbol":"building",
+            "marker-size": "large",
+            "marker-color": "#3ade0a",
+            "marker-symbol": "building",
             "title": "GEO 1",
-            "description": "The place to be. Das GEO1 Gebäude, in dem ihr später die meiste Zeit abhängen werdet.",
-            "urls": {
-              "https://geofs.uni-muenster.de/wp/": "https://geofs.uni-muenster.de/wp/wp-content/uploads/2015/03/Bildschirmfoto-2014-07-29-um-11.36.41-150x150.png",
-              "http://www.uni-muenster.de/Geoinformatics": "http://www.uni-muenster.de/imperia/md/images/geoinformatics/_v/logo-ifgi-text-de.png"
-            }
+            "description": "The place to be. Das Gebäude, in dem ihr später die meiste Zeit abhängen werdet: Die Institute für Geoinformatik, Landschaftsökologie und Geographie sind hier angesiedelt.<br/>Außerdem beginnt hier am Montag das O-Wochen Programm im Hörsaal!"
           },
           "geometry": {
             "type": "Point",
@@ -27,32 +24,84 @@
               51.96933645806144
             ]
           }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#7199d2",
+            "marker-size": "medium",
+            "marker-symbol": "place-of-worship",
+            "title": "Rektoratsbegrüßung",
+            "description": "Im Schloss werdet ihr am Freitag offiziell vom Rektorat der Uni begrüßt und habt die Gelegenheit eine fancy WWU-Umhängetasche mitzunehmen!"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.613203525543214,
+              51.963724340021315
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#d12020",
+            "marker-size": "medium",
+            "marker-symbol": "bar",
+            "title": "Rote Liebe",
+            "description": "In dieser Kneipe könnt ihr am Donnerstag Abend mit den Erstis der Geographie und Landschaftsökologie saufen gehn!"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.621306478977203,
+              51.966264422783865
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#d12020",
+            "marker-size": "medium",
+            "marker-symbol": "bar",
+            "title": "Bunter Vogel",
+            "description": "Am Montag findet hier der Kneipenabend der GI statt"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.6321426033973685,
+              51.96149152640698
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#7e7e7e",
+            "marker-size": "medium",
+            "marker-symbol": "bicycle",
+            "title": "Treffpunkt Fahrradexkursion",
+            "description": "Donnerstag um 14 Uhr startet die Fahrradexkursion durch Münster am Überwasserkirchplatz.<br/>Fahrrad nicht vergessen!"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.62298285961151,
+              51.96387969079011
+            ]
+          }
         }
       ]
     },
     {
       "type": "FeatureCollection",
       "properties": {
-        "title": "Uni"
+        "title": "Uni",
+        "description": "Einrichtungen der Uni, welche du im Laufe deines Studiums aufsuchen wirst"
       },
       "features": [
-        {
-          "type": "Feature",
-          "properties": {
-            "marker-size": "medium",
-            "marker-color": "#5ddc00",
-            "marker-symbol": "building",
-            "title": "GEO 1",
-            "description": "The place to be. Das GEO1 Gebäude, in dem ihr später die meiste Zeit abhängen werdet."
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              7.595742344856262,
-              51.96942073363007
-            ]
-          }
-        },
         {
           "type": "Feature",
           "properties": {
@@ -77,7 +126,7 @@
             "marker-size": "medium",
             "marker-symbol": "restaurant",
             "title": "Mensa am Aasee",
-            "description": "Mensa in schöner Lage, hat teilweise auch Abends auf."
+            "description": "Mensa in schöner Lage, hat auch noch Abends auf!"
           },
           "geometry": {
             "type": "Point",
@@ -94,7 +143,7 @@
             "marker-size": "medium",
             "marker-symbol": "restaurant",
             "title": "Bistro Denkpause",
-            "description": "Kleine Mensa in der FH, hat nur 2 der Tagesgerichte aus der Mensa am Ring"
+            "description": "Kleine Mensa in der FH. Hat nur zwei der Tagesgerichte aus der Mensa am Ring, ist aber um die Ecke!"
           },
           "geometry": {
             "type": "Point",
@@ -108,31 +157,16 @@
           "type": "Feature",
           "properties": {
             "marker-color": "#4e8edc",
-            "marker-size": "medium",
+            "marker-size": "large",
             "marker-symbol": "college",
-            "title": "Mathe & Informatik Hörsaalgebäude"
+            "title": "Mathe & Informatik Hörsaalgebäude",
+            "description": "Vorlesungen der ersten Semester finden hier statt"
           },
           "geometry": {
             "type": "Point",
             "coordinates": [
               7.6027750968933105,
               51.96580004625245
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "marker-color": "#4e8edc",
-            "marker-size": "medium",
-            "marker-symbol": "college",
-            "title": "Mathe Seminarraumgebäude"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              7.60278582572937,
-              51.96649413039257
             ]
           }
         },
@@ -156,11 +190,14 @@
         {
           "type": "Feature",
           "properties": {
-            "marker-color": "#ffffff",
+            "marker-color": "#d9d9d9",
             "marker-size": "medium",
             "marker-symbol": "place-of-worship",
             "title": "Studierendensekretariat",
-            "description": "Das Studierendensekretariat übernimmt für die studierenden Verwaltungsaufgaben."
+            "description": "Das Studierendensekretariat übernimmt für die Studierenden verschiedene Verwaltungsaufgaben.",
+            "urls": {
+              "https://www.uni-muenster.de/studium/studienangebot/studierendensekretariat.html": "//www.uni-muenster.de/imperia/md/images/allgemein/farbunabhaengig/wwu.png"
+            }
           },
           "geometry": {
             "type": "Point",
@@ -173,11 +210,14 @@
         {
           "type": "Feature",
           "properties": {
-            "marker-color": "#f02523",
+            "marker-color": "#b63bf4",
             "marker-size": "medium",
-            "marker-symbol": "parking",
+            "marker-symbol": "library",
             "title": "ULB",
-            "description": "Die Haupt-Bibliothek der Uni. Geoinformatiker sind dort eher selten anzutreffen.."
+            "description": "Die Haupt-Bibliothek der Uni. Geoinformatiker sind dort eher selten anzutreffen, obwohl diese Bib eine sehr angenehme Lernatmosphäre bietet.",
+            "urls": {
+              "//ulb.uni-muenster.de/": "//www.uni-muenster.de/imperia/md/images/ulb2/_v/logo.svg"
+            }
           },
           "geometry": {
             "type": "Point",
@@ -186,13 +226,97 @@
               51.96262695329827
             ]
           }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#3dd319",
+            "marker-size": "medium",
+            "marker-symbol": "ice-cream",
+            "title": "Fachschaften GI & GeoLÖK",
+            "description": "Die beiden Fachschaften am Fachbereich stehen euch hier im Erdgeschoss für Fragen und Kaffee zur Verfügung.",
+            "urls": {
+              "https://geofs.uni-muenster.de/wp/": "//geofs.uni-muenster.de/dl/logos/geofs_100.png",
+              "https://geofs.uni-muenster.de/geoloek": "//geofs.uni-muenster.de/dl/logos/geoloek_100.png"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.595919370651245,
+              51.969321585885844
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#3dd319",
+            "marker-size": "medium",
+            "marker-symbol": "ice-cream",
+            "title": "Fachschaft Mathe/Info",
+            "description": "Ein Besuch der Info-/Mathe-Fachschaft lohnt manchmal für aktuelle Altklausuren von Mathe & Info 1 / 2 ;)",
+            "urls": {
+              "http://fmi.uni-muenster.de/": "http://fmi.uni-muenster.de/sites/default/files/logo.png"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.6037997007369995,
+              51.96647099442776
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#dadada",
+            "marker-size": "medium",
+            "marker-symbol": "polling-place",
+            "title": "AStA",
+            "description": "Der AStA ist das höchste von den studierenden gewählte Gremium an der UNI, welcher sich für studentische Angelegenheiten an der Uni einsetzt.<br>Hier ist das Büro in welchem ihr euch auch über diverse Unithemen, Workshops und mehr aus studentischer Perspektive informieren könnt.",
+            "urls": {
+              "http://asta.ms": "http://www.asta.ms/templates/asta.ms/img/AStA_Logo_2007.png"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.615832090377807,
+              51.96304343455527
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-size": "large",
+            "marker-color": "#4e8edc",
+            "marker-symbol": "college",
+            "title": "GEO 1",
+            "description": "Hier sind die Institute für Geoinformatik, Landschaftsökologie und Geographie angesiedelt. Außerdem findet ihr hier die Fachschaften Geoinformatik (\"hey das sind wir!!\") &amp; GeoLÖK.",
+            "urls": {
+              "//www.uni-muenster.de/Geoinformatics": "//www.uni-muenster.de/imperia/md/images/geoinformatics/_v/logo-ifgi-text-de.png",
+              "//www.uni-muenster.de/Landschaftsoekologie": "//www.uni-muenster.de/imperia/md/images/landschaftsoekologie/_v/iloek_logo2_links_schmal.gif",
+              "//www.uni-muenster.de/Geographie/": "//www.uni-muenster.de/imperia/md/images/geographiea/_v//ifg_logo.jpg"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.595645785331725,
+              51.96946204512544
+            ]
+          }
         }
       ]
     },
     {
       "type": "FeatureCollection",
       "properties": {
-        "title": "Münster"
+        "title": "Münster",
+        "description": "mehr oder weniger relevante Orte in Münster, welche dir eventuell die Orientierung in der neuen Stadt erleichtern"
       },
       "features": [
         {
@@ -235,7 +359,7 @@
             "marker-size": "medium",
             "marker-symbol": "bar",
             "title": "Haverkamp",
-            "description": "Neben Clubs wie dem Tryptichon ist hier das Makerspace warpzone zu finden"
+            "description": "Neben Clubs wie dem Tryptichon ist hier das Makerspace 'warpzone' zu finden"
           },
           "geometry": {
             "type": "Point",
@@ -266,8 +390,8 @@
           "type": "Feature",
           "properties": {
             "stroke": "#32c311",
-            "stroke-width": 3,
-            "stroke-opacity": 1,
+            "stroke-width": 5,
+            "stroke-opacity": 0.7,
             "title": "Promenade",
             "description": "Die berühmtberüchtigte münsteraner Fahrradautobahn"
           },
@@ -380,7 +504,7 @@
             "marker-color": "#1a17f0",
             "marker-size": "medium",
             "marker-symbol": "fuel",
-            "titel": "Blaue Lagune",
+            "title": "Blaue Lagune",
             "description": "Du brauchst morgens um 4 noch Bier/Kekse/Blättchen/..? These guys take care of you!"
           },
           "geometry": {
@@ -388,6 +512,49 @@
             "coordinates": [
               7.6138633489608765,
               51.96743277946533
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "stroke": "#000fb0",
+            "stroke-width": 5,
+            "stroke-opacity": 0.7,
+            "title": "Kanal",
+            "description": "Da das Wasser des Aasees im allgemeinen gemieden wird, ist der Dortmund-Ems Kanal im Sommer Münsters großes Freibad."
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                7.6631784439086905,
+                51.97049977739521
+              ],
+              [
+                7.664551734924316,
+                51.96324175760328
+              ],
+              [
+                7.664294242858886,
+                51.96164192667244
+              ],
+              [
+                7.663607597351074,
+                51.96038582105194
+              ],
+              [
+                7.660861015319824,
+                51.95820408026611
+              ],
+              [
+                7.657427787780761,
+                51.95591644408198
+              ],
+              [
+                7.6514410972595215,
+                51.95209464118261
+              ]
             ]
           }
         }

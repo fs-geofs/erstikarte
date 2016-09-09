@@ -1,7 +1,4 @@
-/// <reference path="Leaflet.d.ts" />
-/// <reference path="Leaflet.Tour.d.ts" />
 L.Control.Tour = L.Control.extend({
-    //includes: L.Mixin.Events,
     options: {
         position: 'topright',
     },
@@ -90,14 +87,33 @@ L.Control.Tour = L.Control.extend({
         // parse tour features
         for (var step = 0; step < data.features.length; ++step) {
             var layer = L.geoJson(data.features[step], {
-                onEachFeature: function (feature, layer) {
-                    this._createPopup(feature.properties, layer);
+                pointToLayer: function(f, latLng) {
+                    // create mapbox maki markers from properties
+                    var size = f.properties['marker-size'] || 'm';
+                    var icon = L.MakiMarkers.icon({
+                        icon:  f.properties['marker-symbol'],
+                        color: f.properties['marker-color'],
+                        size:  size[0],
+                    });
+                    return L.marker(latLng, { icon: icon });
+                },
+                onEachFeature: function (f, layer) {
+                    if (f.geometry.type !== 'Point') {
+                        layer.setStyle({
+                            color: f.properties['stroke'],
+                            weight: f.properties['stroke-width'],
+                            opacity: f.properties['stroke-opacity'],
+                            fillColor: f.properties['fill'],
+                            fillOpacity: f.properties['fill.opacity']
+                        });
+                    }
+                    this._createPopup(f.properties, layer);
                 }.bind(this)
             });
-            layer.properties = data.features[step].properties;
+            layer.properties = data.features[step].properties || {};
             this.tourSteps.push(layer);
             var listItem = L.DomUtil.create('li', '', this._stepList);
-            listItem.innerHTML = '<a href="#" index="' + step + '">' + layer.properties.title + '</a>';
+            listItem.innerHTML = '<a href="#' + step + '">' + layer.properties.title + '</a>';
             L.DomEvent.on(listItem, 'click', this.goTo, this);
         }
         this._addStepLayer(0);
@@ -133,7 +149,7 @@ L.Control.Tour = L.Control.extend({
             html += '<p>' + props.description + '</p>';
         for (var url in props.urls) {
             var isImg = props.urls[url].split('.').pop();
-            isImg = (['jpg', 'jpeg', 'png', 'svg'].indexOf(isImg.toLowerCase()) === -1) ? false : true;
+            isImg = (['jpg', 'jpeg', 'png', 'svg', 'gif'].indexOf(isImg.toLowerCase()) === -1) ? false : true;
             html += '<a class="popup-link" href="' + url + '" target="_blank">';
             html += isImg ? '<img src="' + props.urls[url] + '"/>' : props.urls[url];
             html += '</a>';
@@ -143,7 +159,7 @@ L.Control.Tour = L.Control.extend({
     goTo: function (pos) {
         // also accept DOM elements as param (from this._stepList)
         if (typeof pos !== 'number')
-            this._addStepLayer(pos.target.getAttribute('index'));
+            this._addStepLayer(Number(pos.target.getAttribute('href').slice(1)));
         else
             this._addStepLayer(pos);
         return this;
@@ -160,4 +176,3 @@ L.Control.Tour = L.Control.extend({
 L.control.tour = function (options) {
     return new L.Control.Tour(options);
 };
-//# sourceMappingURL=Leaflet.Tour.js.map
