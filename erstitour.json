@@ -5,7 +5,7 @@
       "type": "FeatureCollection",
       "properties": {
         "title": "O-Woche",
-        "description": "Einige der Orte, an denen Events während der Erstiwoche stattfinden"
+        "description": "Einige der Orte, an denen Events in der Erstiwoche stattfinden"
       },
       "features": [
         {
@@ -190,7 +190,7 @@
         {
           "type": "Feature",
           "properties": {
-            "marker-color": "#d9d9d9",
+            "marker-color": "#7e7e7e",
             "marker-size": "medium",
             "marker-symbol": "place-of-worship",
             "title": "Studierendensekretariat",
@@ -271,11 +271,11 @@
         {
           "type": "Feature",
           "properties": {
-            "marker-color": "#dadada",
+            "marker-color": "#7e7e7e",
             "marker-size": "medium",
             "marker-symbol": "polling-place",
             "title": "AStA",
-            "description": "Der AStA ist das höchste von den studierenden gewählte Gremium an der UNI, welcher sich für studentische Angelegenheiten an der Uni einsetzt.<br>Hier ist das Büro in welchem ihr euch auch über diverse Unithemen, Workshops und mehr aus studentischer Perspektive informieren könnt.",
+            "description": "Der AStA ist das höchste von den studierenden gewählte Gremium an der Uni, welcher sich für studentische Angelegenheiten einsetzt.<br/>Hier ist dessen Büro, in welchem ihr euch auch über diverse Unithemen, Workshops und mehr informieren könnt.",
             "urls": {
               "http://asta.ms": "http://www.asta.ms/templates/asta.ms/img/AStA_Logo_2007.png"
             }
