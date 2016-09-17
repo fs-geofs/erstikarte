@@ -4,17 +4,20 @@
 <head>
   <title>geofs erstikarte</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+  <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
   <link rel="stylesheet" href="Leaflet.Tour.css">
-  <link rel="stylesheet" href="index.css">
+  <style>
+    html, body, #map { margin: 0; height: 100%; }
+  </style>
 </head>
 
 <body>
   <div id="map"></div>
   <p id="error" style="z-index: 1; position: absolute; top: 10%; left: 10%; font-size: 200%;"></p>
 
-  <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
-  <script src="bower_components/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js" charset="utf-8"></script>
+  <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
   <script src="Leaflet.Tour.js" charset="utf-8"></script>
   <script src="index.js" charset="utf-8"></script>
 </body>

@@ -8,6 +8,9 @@
   background: #fff;
 }
 
+.leaflet-control-tour-buttons {
+  text-align: center;
+}
 .leaflet-control-tour-buttons .prev {
   font-weight: bold;
   float: left;

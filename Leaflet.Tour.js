@@ -8,36 +8,33 @@ L.Control.Tour = L.Control.extend({
         this.currentStep = null;
     },
     onAdd: function (map) {
-        this.map = map;
+        this._map = map;
         // create DOM
         var c = this._container = L.DomUtil.create('div', 'leaflet-control-tour leaflet-bar'), b = L.DomUtil.create('div', 'leaflet-control-tour-buttons', c);
         this._btnPrev = L.DomUtil.create('a', 'prev hidden', b);
         this._btnPrev.innerHTML = '<';
         this._btnPrev.href = '#';
-        L.DomEvent.addListener(this._btnPrev, 'click', this.prev, this);
         this._btnTitle = L.DomUtil.create('a', 'title', b);
         this._btnTitle.href = '#';
         this._btnNext = L.DomUtil.create('a', 'next hidden', b);
         this._btnNext.innerHTML = '>';
         this._btnNext.href = '#';
-        L.DomEvent.addListener(this._btnNext, 'click', this.next, this);
         this._descDiv = L.DomUtil.create('div', 'hidden leaflet-control-tour-description', c);
         this._stepList = L.DomUtil.create('ol', 'leaflet-control-tour-list', c);
         // event handling
-        L.DomEvent.disableClickPropagation(c);
-        this._map.on('click', this.collapse, this);
+        L.DomEvent.on(this._btnPrev, 'click', this.prev, this);
+        L.DomEvent.on(this._btnNext, 'click', this.next, this);
+        L.DomEvent.on(this._map, 'click', this.collapse, this);
         if (!L.Browser.android) {
-            L.DomEvent.on(c, {
-                mouseenter: this.expand,
-                mouseleave: this.collapse
-            }, this);
+            L.DomEvent.disableClickPropagation(c);
+            L.DomEvent.on(c, 'mouseenter', this.expand, this);
+            L.DomEvent.on(c, 'mouseleave', this.collapse, this);
         }
         if (L.Browser.touch) {
-            L.DomEvent.on(this._btnTitle, 'click', L.DomEvent.stop);
-            L.DomEvent.on(this._btnTitle, 'click', this.expand, this);
-        }
-        else {
-            L.DomEvent.on(this._btnTitle, 'focus', this.expand, this);
+            L.DomEvent.on(c, 'click', L.DomEvent.stop);
+            L.DomEvent.on(c, 'click', this.expand, this);
+        } else {
+            L.DomEvent.on(c, 'focus', this.expand, this);
             L.DomEvent.disableScrollPropagation(c);
         }
         return c;
@@ -49,12 +46,12 @@ L.Control.Tour = L.Control.extend({
             mouseenter: this.expand,
             mouseleave: this.collapse
         }, this);
-        L.DomEvent.off(this._btnTitle, 'click', this.expand, this);
-        L.DomEvent.off(this._btnTitle, 'focus', this.expand, this);
+        L.DomEvent.off(this._container, 'click', this.expand, this);
+        L.DomEvent.off(this._container, 'focus', this.expand, this);
         for (var i = 0; i < this._stepList.childNodes.length; ++i) {
             L.DomEvent.off(this._stepList.childNodes[i], 'click', this.goTo, this);
         }
-        this.map = null;
+        this._map = null;
     },
     expand: function (e) {
         L.DomUtil.addClass(this._container, 'leaflet-control-tour-expanded');
@@ -74,39 +71,23 @@ L.Control.Tour = L.Control.extend({
         return this;
     },
     loadTour: function (data) {
-        if (!this.map)
+        if (!this._map)
             return console.error('L.tour must be added to map before loading a tour!');
         // delete old tour
         if (this.currentStep)
-            this.tourSteps[this.currentStep].removeFrom(this.map);
+            this.tourSteps[this.currentStep].removeFrom(this._map);
         for (var i = 0; i < this._stepList.childNodes.length; ++i) {
             L.DomEvent.off(this._stepList.childNodes[i], 'click', this.goTo, this);
         }
-        L.DomUtil.empty(this._stepList);
+        this._stepList.innerHTML = '';
         this.tourSteps = [];
         // parse tour features
         for (var step = 0; step < data.features.length; ++step) {
             var layer = L.geoJson(data.features[step], {
-                pointToLayer: function(f, latLng) {
-                    // create mapbox maki markers from properties
-                    var size = f.properties['marker-size'] || 'm';
-                    var icon = L.MakiMarkers.icon({
-                        icon:  f.properties['marker-symbol'],
-                        color: f.properties['marker-color'],
-                        size:  size[0],
-                    });
-                    return L.marker(latLng, { icon: icon });
-                },
+                pointToLayer: L.mapbox.marker.style,
                 onEachFeature: function (f, layer) {
-                    if (f.geometry.type !== 'Point') {
-                        layer.setStyle({
-                            color: f.properties['stroke'],
-                            weight: f.properties['stroke-width'],
-                            opacity: f.properties['stroke-opacity'],
-                            fillColor: f.properties['fill'],
-                            fillOpacity: f.properties['fill.opacity']
-                        });
-                    }
+                    if (f.geometry.type !== 'Point')
+                        layer.setStyle(L.mapbox.simplestyle.style(f));
                     this._createPopup(f.properties, layer);
                 }.bind(this)
             });
@@ -125,15 +106,15 @@ L.Control.Tour = L.Control.extend({
         if (stepIndex >= this.tourSteps.length || stepIndex < 0)
             return console.error('tour does not have step ' + stepIndex);
         if (this.currentStep !== null) {
-            this.tourSteps[this.currentStep].removeFrom(this.map);
+            this._map.removeLayer(this.tourSteps[this.currentStep]);
         }
         else {
             L.DomUtil.removeClass(this._btnPrev, 'hidden');
             L.DomUtil.removeClass(this._btnNext, 'hidden');
         }
         this.currentStep = stepIndex;
-        this.tourSteps[this.currentStep].addTo(this.map);
-        this.map.fitBounds(this.tourSteps[this.currentStep].getBounds());
+        this.tourSteps[this.currentStep].addTo(this._map);
+        this._map.fitBounds(this.tourSteps[this.currentStep].getBounds());
         this._btnTitle.innerHTML = this.tourSteps[this.currentStep].properties.title;
         if (this.tourSteps[this.currentStep].properties.description) {
             this._descDiv.innerHTML = this.tourSteps[this.currentStep].properties.description;
