@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    var mapboxToken = 'pk.eyJ1Ijoibm9lcnciLCJhIjoiY2lzdzlwZDVvMDAyMDJ6bzNrNzd0ejFqNyJ9.Xe6kxs1bkjcje6Se1qtVAg';
-    L.MakiMarkers.accessToken = mapboxToken;
+    L.mapbox.accessToken = 'pk.eyJ1Ijoibm9lcnciLCJhIjoiY2lzdzlwZDVvMDAyMDJ6bzNrNzd0ejFqNyJ9.Xe6kxs1bkjcje6Se1qtVAg';
 
     /* get tour data from query */
     ajax(parseQuery().tour || 'erstitour.json', function (response, statusCode) {
         if (statusCode !== 200)
             return console.error('could not get data: ' + statusCode);
         // init map with tour
-        var map = L.map('map', { maxZoom: 18 }).setView([51.96, 7.63], 13);
-        var tourData = JSON.parse(response);
+        var map = L.mapbox.map('map', 'mapbox.light', { maxZoom: 18, center: [51.96, 7.63], zoom: 13 });
         L.control.scale().addTo(map);
-        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=' + mapboxToken, {
-            attribution: '&copy; <a href="//www.openstreetmap.org/copyright">OpenStreetMap</a>' + ' contributors'
-        }).addTo(map);
+        var tourData = JSON.parse(response);
         var tour = L.control.tour()
             .addTo(map)
             .loadTour(tourData)
