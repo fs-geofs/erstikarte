@@ -15,7 +15,7 @@
             "marker-color": "#3ade0a",
             "marker-symbol": "building",
             "title": "GEO 1",
-            "description": "The place to be. Das Gebäude, in dem ihr später die meiste Zeit abhängen werdet: Die Institute für Geoinformatik, Landschaftsökologie und Geographie sind hier angesiedelt.<br/>Außerdem beginnt hier am Montag das O-Wochen Programm im Hörsaal!"
+            "description": "The place to be. Das Gebäude, in dem ihr später die meiste Zeit abhängen werdet: Die Institute für Geoinformatik, Landschaftsökologie und Geographie sind hier angesiedelt.<br/>Außerdem beginnt hier am Montag das O-Wochen-Programm im Hörsaal!"
           },
           "geometry": {
             "type": "Point",
@@ -32,7 +32,7 @@
             "marker-size": "medium",
             "marker-symbol": "place-of-worship",
             "title": "Rektoratsbegrüßung",
-            "description": "Im Schloss werdet ihr am Freitag offiziell vom Rektorat der Uni begrüßt und habt die Gelegenheit eine fancy WWU-Umhängetasche mitzunehmen!"
+            "description": "Im Schloss werdet ihr am Donnerstag offiziell vom Rektorat der Uni begrüßt und habt die Gelegenheit eine fancy WWU-Umhängetasche mitzunehmen! Falls ihr das verpasst, könnt ihr euch die Tasche aber auch noch die nächsten Wochen abholen."
           },
           "geometry": {
             "type": "Point",
@@ -48,14 +48,14 @@
             "marker-color": "#d12020",
             "marker-size": "medium",
             "marker-symbol": "bar",
-            "title": "Rote Liebe",
+            "title": "Ratinger Hof",
             "description": "In dieser Kneipe könnt ihr am Donnerstag Abend mit den Erstis der Geographie und Landschaftsökologie saufen gehn!"
           },
           "geometry": {
             "type": "Point",
             "coordinates": [
-              7.621306478977203,
-              51.966264422783865
+              7.6179322600364685,
+              51.96643298531674
             ]
           }
         },
@@ -65,14 +65,14 @@
             "marker-color": "#d12020",
             "marker-size": "medium",
             "marker-symbol": "bar",
-            "title": "Bunter Vogel",
-            "description": "Am Montag findet hier der Kneipenabend der GI statt"
+            "title": "Treffpunkt Kneipenrallye",
+            "description": "Am Montagabend treffen wir uns hier zum Start der Kneipenrallye!"
           },
           "geometry": {
             "type": "Point",
             "coordinates": [
-              7.6321426033973685,
-              51.96149152640698
+              7.616178095340729,
+              51.96351940839632
             ]
           }
         },
@@ -83,7 +83,7 @@
             "marker-size": "medium",
             "marker-symbol": "bicycle",
             "title": "Treffpunkt Fahrradexkursion",
-            "description": "Donnerstag um 14 Uhr startet die Fahrradexkursion durch Münster am Überwasserkirchplatz.<br/>Fahrrad nicht vergessen!"
+            "description": "Dienstag um 14 Uhr startet die Fahrradexkursion durch Münster am Überwasserkirchplatz.<br/>Bringt die Leeze mit!"
           },
           "geometry": {
             "type": "Point",
@@ -126,7 +126,7 @@
             "marker-size": "medium",
             "marker-symbol": "restaurant",
             "title": "Mensa am Aasee",
-            "description": "Mensa in schöner Lage, hat auch noch Abends auf!"
+            "description": "Mensa in schöner Lage, hat auch noch abends auf!"
           },
           "geometry": {
             "type": "Point",
@@ -143,7 +143,7 @@
             "marker-size": "medium",
             "marker-symbol": "restaurant",
             "title": "Bistro Denkpause",
-            "description": "Kleine Mensa in der FH. Hat nur zwei der Tagesgerichte aus der Mensa am Ring, ist aber um die Ecke!"
+            "description": "Kleine Mensa in der FH. Hat nur zwei der Tagesgerichte aus der Mensa am Ring, ist dafür aber gleich um die Ecke!"
           },
           "geometry": {
             "type": "Point",
@@ -160,7 +160,7 @@
             "marker-size": "large",
             "marker-symbol": "college",
             "title": "Mathe & Informatik Hörsaalgebäude",
-            "description": "Vorlesungen der ersten Semester finden hier statt"
+            "description": "Mathe- und Informatik-Vorlesungen der ersten Semester finden hier statt"
           },
           "geometry": {
             "type": "Point",
@@ -177,7 +177,7 @@
             "marker-size": "medium",
             "marker-symbol": "police",
             "title": "Prüfungsamt FB14",
-            "description": "Ein Ort den ihr so selten wie möglich aufsuchen wollt. Das Prüfungsamt ist für eure Anmeldung und Noteneintragungen von Klausuren zuständig."
+            "description": "Ein Ort den ihr so selten wie möglich aufsuchen wollt. Das Prüfungsamt ist für eure Anmeldung und Noteneintragungen von Klausuren zuständig. Hier landet ihr in der Regel nur, wenn's damit Probleme gab..."
           },
           "geometry": {
             "type": "Point",
@@ -234,7 +234,7 @@
             "marker-size": "medium",
             "marker-symbol": "ice-cream",
             "title": "Fachschaften GI & GeoLÖK",
-            "description": "Die beiden Fachschaften am Fachbereich stehen euch hier im Erdgeschoss für Fragen und Kaffee zur Verfügung.",
+            "description": "Die beiden Fachschaften GI und GeoLök haben ihre Räume im Erdgeschoss des GEO1, direkt gegenüber des Hörsaals. Wir haben immer ein offenes Ohr für euch!",
             "urls": {
               "https://geofs.uni-muenster.de/wp/": "//geofs.uni-muenster.de/dl/logos/geofs_100.png",
               "https://geofs.uni-muenster.de/geoloek": "//geofs.uni-muenster.de/dl/logos/geoloek_100.png"
@@ -255,9 +255,9 @@
             "marker-size": "medium",
             "marker-symbol": "ice-cream",
             "title": "Fachschaft Mathe/Info",
-            "description": "Ein Besuch der Info-/Mathe-Fachschaft lohnt manchmal für aktuelle Altklausuren von Mathe & Info 1 / 2 ;)",
+            "description": "Ein Besuch der Fachschaft Mathe/Info lohnt sich oft für aktuelle Altklausuren von Mathe- und Info-Kursen ;)",
             "urls": {
-              "http://fmi.uni-muenster.de/": "http://fmi.uni-muenster.de/sites/default/files/logo.png"
+              "http://uni-muenster.de/FSMI": "https://www.uni-muenster.de/FSMI/themes/fmi/logo_big.svg"
             }
           },
           "geometry": {
@@ -275,7 +275,7 @@
             "marker-size": "medium",
             "marker-symbol": "polling-place",
             "title": "AStA",
-            "description": "Der AStA ist das höchste von den studierenden gewählte Gremium an der Uni, welcher sich für studentische Angelegenheiten einsetzt.<br/>Hier ist dessen Büro, in welchem ihr euch auch über diverse Unithemen, Workshops und mehr informieren könnt.",
+            "description": "Der AStA ist das höchste von den Studierenden gewählte Gremium an der Uni. Er setzt sich für studentische Angelegenheiten ein.<br/>Hier ist dessen Büro, in welchem ihr euch auch über diverse Unithemen, Workshops und mehr informieren könnt. Außerdem werden verschiedene Services angeboten, z.B. ein Bulliverleih!",
             "urls": {
               "http://asta.ms": "http://www.asta.ms/templates/asta.ms/img/AStA_Logo_2007.png"
             }
@@ -393,7 +393,7 @@
             "stroke-width": 5,
             "stroke-opacity": 0.7,
             "title": "Promenade",
-            "description": "Die berühmtberüchtigte münsteraner Fahrradautobahn"
+            "description": "Die berühmtberüchtigte Münsteraner Fahrradautobahn"
           },
           "geometry": {
             "type": "LineString",
@@ -522,7 +522,7 @@
             "stroke-width": 5,
             "stroke-opacity": 0.7,
             "title": "Kanal",
-            "description": "Da das Wasser des Aasees im allgemeinen gemieden wird, ist der Dortmund-Ems Kanal im Sommer Münsters großes Freibad."
+            "description": "Da das Wasser des Aasees im Allgemeinen gemieden wird, ist der Dortmund-Ems-Kanal im Sommer Münsters großes Freibad."
           },
           "geometry": {
             "type": "LineString",
