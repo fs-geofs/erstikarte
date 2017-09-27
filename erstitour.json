@@ -49,7 +49,7 @@
             "marker-size": "medium",
             "marker-symbol": "bar",
             "title": "Ratinger Hof",
-            "description": "In dieser Kneipe könnt ihr am Donnerstag Abend mit den Erstis der Geographie und Landschaftsökologie saufen gehn!"
+            "description": "In dieser Kneipe könnt ihr am Donnerstag Abend die Erstis der Geographie und Landschaftsökologie kennenlernen."
           },
           "geometry": {
             "type": "Point",
@@ -90,6 +90,26 @@
             "coordinates": [
               7.62298285961151,
               51.96387969079011
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#3dd319",
+            "marker-size": "medium",
+            "marker-symbol": "ice-cream",
+            "title": "Fachschaft Mathe/Info",
+            "description": "Ein Besuch der Fachschaft Mathe/Info lohnt sich oft für aktuelle Altklausuren von Mathe- und Info-Kursen ;)",
+            "urls": {
+              "http://uni-muenster.de/FSMI": "https://www.uni-muenster.de/FSMI/themes/fmi/logo_big.svg"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.6037997007369995,
+              51.96647099442776
             ]
           }
         }
@@ -245,26 +265,6 @@
             "coordinates": [
               7.595919370651245,
               51.969321585885844
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "marker-color": "#3dd319",
-            "marker-size": "medium",
-            "marker-symbol": "ice-cream",
-            "title": "Fachschaft Mathe/Info",
-            "description": "Ein Besuch der Fachschaft Mathe/Info lohnt sich oft für aktuelle Altklausuren von Mathe- und Info-Kursen ;)",
-            "urls": {
-              "http://uni-muenster.de/FSMI": "https://www.uni-muenster.de/FSMI/themes/fmi/logo_big.svg"
-            }
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              7.6037997007369995,
-              51.96647099442776
             ]
           }
         },
