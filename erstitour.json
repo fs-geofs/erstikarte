@@ -48,8 +48,8 @@
             "marker-color": "#d12020",
             "marker-size": "medium",
             "marker-symbol": "bar",
-            "title": "Spooky's",
-            "description": "In dieser Kneipe könnt ihr am Donnerstag Abend die Erstis der Geographie und Landschaftsökologie kennenlernen."
+            "title": "Shooter Stars",
+            "description": "In dieser Kneipe könnt ihr am Mittwoch Abend die Erstis der Geographie und Landschaftsökologie kennenlernen."
           },
           "geometry": {
             "type": "Point",
@@ -108,8 +108,8 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              7.6037997007369995,
-              51.96647099442776
+              7.603332996368407,
+              51.966264422783865
             ]
           }
         }
