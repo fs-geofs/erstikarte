@@ -30,7 +30,7 @@
           "properties": {
             "marker-color": "#7199d2",
             "marker-size": "medium",
-            "marker-symbol": "stadium",
+            "marker-symbol": "polling-place",
             "title": "Rektoratsbegrüßung",
             "description": "In der Universitätssporthalle (Horstmarer Landweg 51) werdet ihr am Mittwoch offiziell vom Rektorat der Uni begrüßt und habt die Gelegenheit eine fancy WWU-Umhängetasche mitzunehmen! Falls ihr das verpasst, könnt ihr euch die Tasche aber auch noch die nächsten Wochen abholen."
           },
@@ -81,7 +81,7 @@
           "properties": {
             "marker-color": "#7e7e7e",
             "marker-size": "medium",
-            "marker-symbol": "karaoke",
+            "marker-symbol": "town",
             "title": "Treffpunkt Stadtexkursion",
             "description": "Donnerstag um 14 Uhr startet die Exkursion durch Münster am Überwasserkirchplatz.<br/>Wir sind zu Fuß unterwegs!"
           },
