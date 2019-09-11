@@ -92,26 +92,6 @@
               51.96387969079011
             ]
           }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "marker-color": "#3dd319",
-            "marker-size": "medium",
-            "marker-symbol": "ice-cream",
-            "title": "Fachschaft Mathe und Info",
-            "description": "Ein Besuch der Fachschaft Mathe und Info lohnt sich oft für aktuelle Altklausuren von Mathe- und Info-Kursen ;)",
-            "urls": {
-              "http://uni-muenster.de/FSMI": "https://www.uni-muenster.de/FSMI/themes/fmi/logo_big.svg"
-            }
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [
-              7.603332996368407,
-              51.966264422783865
-            ]
-          }
         }
       ]
     },
@@ -136,6 +116,26 @@
             "coordinates": [
               7.600210905075072,
               51.9654695262173
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "marker-color": "#3dd319",
+            "marker-size": "medium",
+            "marker-symbol": "ice-cream",
+            "title": "Fachschaft Mathe und Info",
+            "description": "Ein Besuch der Fachschaft Mathe und Info lohnt sich oft für aktuelle Altklausuren von Mathe- und Info-Kursen ;)",
+            "urls": {
+              "http://uni-muenster.de/FSMI": "https://www.uni-muenster.de/FSMI/themes/fmi/logo_big.svg"
+            }
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              7.603332996368407,
+              51.966264422783865
             ]
           }
         },
